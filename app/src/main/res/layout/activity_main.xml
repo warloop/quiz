@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/header_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_gravity="center"
+        android:background="#655AFA"
+        android:padding="8dp"
+        android:text="Quiz"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/question_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/buttons_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/true_button"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="16dp"
+                android:textColor="#FFFFFF"
+                android:background="#655AFA"
+                android:text="@string/button_true"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/false_button"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="16dp"
+                android:text="@string/button_false"
+                android:textSize="20sp"
+                android:background="#655AFA" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_next"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="#655AFA"/>
+</LinearLayout>
